@@ -658,6 +658,42 @@ ArboristNode {
 }
 `
 
+exports[`test/arborist/reify.js TAP do install optional deps with mismatched platform specifications when forced > expect resolving Promise 1`] = `
+ArboristNode {
+  "children": Map {
+    "platform-specifying-test-package" => ArboristNode {
+      "edgesIn": Set {
+        EdgeIn {
+          "from": "",
+          "name": "platform-specifying-test-package",
+          "spec": "1.0.0",
+          "type": "optional",
+        },
+      },
+      "location": "node_modules/platform-specifying-test-package",
+      "name": "platform-specifying-test-package",
+      "optional": true,
+      "path": "{CWD}/test/arborist/reify-do-install-optional-deps-with-mismatched-platform-specifications-when-forced/node_modules/platform-specifying-test-package",
+      "resolved": "https://registry.npmjs.org/platform-specifying-test-package/-/platform-specifying-test-package-1.0.0.tgz",
+      "version": "1.0.0",
+    },
+  },
+  "edgesOut": Map {
+    "platform-specifying-test-package" => EdgeOut {
+      "name": "platform-specifying-test-package",
+      "spec": "1.0.0",
+      "to": "node_modules/platform-specifying-test-package",
+      "type": "optional",
+    },
+  },
+  "location": "",
+  "name": "reify-do-install-optional-deps-with-mismatched-platform-specifications-when-forced",
+  "packageName": "platform-test",
+  "path": "{CWD}/test/arborist/reify-do-install-optional-deps-with-mismatched-platform-specifications-when-forced",
+  "version": "1.0.0",
+}
+`
+
 exports[`test/arborist/reify.js TAP do not add shrinkwrapped deps > expect resolving Promise 1`] = `
 ArboristNode {
   "children": Map {
@@ -1014,6 +1050,24 @@ ArboristNode {
   "name": "reify-do-not-excessively-duplicate-bundled-metadeps",
   "packageName": "@isaacs/bundle-metadep-duplication-root",
   "path": "{CWD}/test/arborist/reify-do-not-excessively-duplicate-bundled-metadeps",
+  "version": "1.0.0",
+}
+`
+
+exports[`test/arborist/reify.js TAP do not install optional deps with mismatched platform specifications > expect resolving Promise 1`] = `
+ArboristNode {
+  "edgesOut": Map {
+    "platform-specifying-test-package" => EdgeOut {
+      "name": "platform-specifying-test-package",
+      "spec": "1.0.0",
+      "to": null,
+      "type": "optional",
+    },
+  },
+  "location": "",
+  "name": "reify-do-not-install-optional-deps-with-mismatched-platform-specifications",
+  "packageName": "platform-test",
+  "path": "{CWD}/test/arborist/reify-do-not-install-optional-deps-with-mismatched-platform-specifications",
   "version": "1.0.0",
 }
 `
